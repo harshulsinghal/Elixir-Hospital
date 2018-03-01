@@ -1,0 +1,176 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="website.css">
+  <link rel="stylesheet" type="text/css" href="hospital.css">
+	<script>
+	var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+function myfunc()
+{
+document.getElementById("demo").innerHTML="Paradoxically, in our success lay our frustration! We recognized that the benefit of our cutting-edge research extended only to a privileged community; the majority of patients could scarcely afford to avail of the advancements in medical science, achieved by some of their own countrymen. This realization laid the foundation of one of the components of our mission – making modern medicine affordable and accessible to all.";
+}
+</script>
+</head>
+<title>Elixir Hospital</title>
+<body>
+<div class="parent">
+<div class="one">
+<img id="one" src="logo.jpg" alt="logo">
+<div class="banner">
+Elixir Hospital
+</div>
+</div>
+<div class="two">   
+    <p id="two"><span class="glyphicon glyphicon-log-in" id="three"></span><a href="register.php"> 
+	Login</a></p> 
+</div>
+<div class="three">
+<ul class="list">
+<li class="na"><a href="test.htm">HOME</a></li>
+<li class="na"><a href="about.htm">ABOUT</a></li>
+<li class="na"><a href="#co">CONTACT</a></li>
+<li class="na"><a href="main.php">MEDICINES</a></li>
+</ul>
+</div>
+<div class="five">
+<ul id="dept">
+<li><b><u>DEPARTMENTS</b></u></li>
+<li><a href="cardi.php">Cardiology</a></li>
+<li><a href="elder.php">Endocrinology and Diabetes</a></li>
+<li><a href="gensur.php">General Surgery</a></li>
+<li><a href="matern.php">Opthamology</a></li>
+<li><a href="ortho.php">Orthopaedics</a></li>
+<li><a href="physio.php">Physiotherapy</a></li>
+<li><a href="radio.php">Radiology</a></li>
+<li><a href="paedia.php">ENT and head-neck surgery</a></li>
+</ul>
+</div>
+  <div class="content display-container" style="margin-left:11 max-width:100%">
+  
+    <img class="mySlides" src="doct.jpg" style="width:100% height:500px" >
+    <img class="mySlides" src="rst.jpg" style="width:100% height:500px ">
+    <img class="mySlides" src="organ.png" style="width:100% height:500px">
+    <img class="mySlides" src="jogging.jpg" style="width:100% height:500px">
+    <img class="mySlides" src="blood.gif" style="width:100% height:500px">
+    <div class="center section large text-white display-bottommiddle" style="width:100%">
+      <div class="left padding-left hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+      <div class="right padding-right hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+      <span class="badge demo border white hover-khaki" onclick="currentDiv(1)"></span>
+      <span class="badge demo border white hover-khaki" onclick="currentDiv(2)"></span>
+      <span class="badge demo border white hover-khaki" onclick="currentDiv(3)"></span>
+      <span class="badge demo border white hover-khaki" onclick="currentDiv(4)"></span>
+      <span class="badge demo border white hover-khaki" onclick="currentDiv(5)"></span>
+    </div>
+  </div>
+  <script>
+  var slideIndex = 1;
+  showDivs(slideIndex);
+
+  function plusDivs(n) {
+    showDivs(slideIndex += n);
+  }
+
+  function currentDiv(n) {
+    showDivs(slideIndex = n);
+  }
+
+  function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("demo");
+    if (n > x.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = x.length}
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+       dots[i].className = dots[i].className.replace(" white", "");
+    }
+    x[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " white";
+  }
+  </script>
+  
+<br>
+<br>
+
+<div class="seven">
+<!--<div class="container">-->
+<!--<div class="row">-->
+<div class="msg">
+<h3> <b style="color:blue"><u>Chairman's Message</b></u></h3>
+<img src="chairman-img3.jpg" alt="im" style="float:right">
+<p>"THIS IS INDIA'S MOMENT IN MEDICAL HISTORY. We have built an institution which matches the highest standards of healthcare delivery across the world, where care is provided to patients at an affordable cost.ELIXIR will offer not only the best technical facilities, but also clinical research, education and training." 
+</p>
+</div>
+<div class="abo" id="ab">
+<h2 style="color:grey">ELIXIR</h2>
+<h3 style="color:orange">Dedicated To Life</h3>
+Elixir is one of India's largest multi-super specialty institutes located in Delhi. Founded by eminent cardiac surgeon, Dr. Naresh Trehan, the institution has been envisioned with 
+the aim of bringing to India the highest standards of medical care along with clinical research, education and training. Elixir is governed under the guiding principles of providing 
+medical services to patients with care, compassion, commitment.
+<a href="about.htm" target="_blank" style="color: maroon">>>more</a>
+</div>
+<div class="con" id="co">
+<h2 style="color:grey"> CONTACT</h2>
+<!--<div class="container-fluid">-->
+<!--<div class="row">-->
+<div class="c1">
+<b>Elixir</b><br>
+Rajouri Garden,Delhi<br>
+Delhi 11027,India<br>
+<b>Phone:-</b>+91- 124 4141414<br>
+<span style="margin-left:55px">+91- 124 4411441</span>
+<hr>
+<b>Fax:-</b>
+<span>+91- 124 4834 111</span>
+<hr>
+<b>Emailid:-</b>
+info@elixir.org<hr>
+</div>
+<div class="c2">
+<!--
+<b>Corporate office</b><br>
+E-18 Defence Colony<br>
+New Delhi 110024<br>
+<b> Phone:</b> +91-11-4411-4411<br>
+<hr>
+<b> Fax: </b> +91-11-2433-1433<br>
+<hr>
+<b>Email Id:</b>info@elixir.org<br>-->
+</div>
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+</div>
+</div>
+<br>
+<br>
+<br>
+<div style="margin-left:950px">
+Follow us online:-
+<a href="http://www.twitter.com" target="_blank"><img src="images/icons/twi.png" id="atwo" style="width:8%;height:5%">
+<a href="http://www.facebook.com" target="_blank"><img src="images/icons/fb.png" id="atwo" style="width:8%;height:5%">
+<a href="http://www.linkedin.com" target="_blank"><img src="images/icons/link.png" id="atwo" style="width:8%;height:5%">
+<a href="http://www.instagram.com" target="_blank"><img src="images/icons/insta.png" id="atwo" style="width:8%;height:5%">
+</div>
+</div>
+</body>
+</html> 
